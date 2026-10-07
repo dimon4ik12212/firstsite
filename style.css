@@ -4,7 +4,18 @@ body{
     background-attachment: fixed;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 h1{
+    animation: fadeIn 1.5s ease-out;
+
     border-top-style:outset;
     border-left-style:double;
     border-bottom-style:dashed;
@@ -15,6 +26,7 @@ h1{
     font-family:'Courier New', Courier, monospace;
     text-shadow: 0px 0px 5px red, 0px -5px 10px yellow;
 }
+
 p{
     color: rgb(237, 233, 232);
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +35,6 @@ p{
     border-color: crimson;
     border-radius: 10px;
     padding: 5px;
-    
 }
 
 h3{
@@ -49,5 +60,11 @@ h2{
 }
 
 img{
-    border-radius: 5px
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; 
 }
+
+img:hover {
+    transform: scale(1.05);
+}
+
