@@ -3,19 +3,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 h1{
-    animation: fadeInUp 1s ease-out;
     border-top-style:outset;
     border-left-style:double;
     border-bottom-style:dashed;
